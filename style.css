@@ -1,3 +1,110 @@
+/*========= Hero section styling*/
 body{
     font-family: 'Poppins', sans-serif;
+}
+
+.header-section{
+    background-color: #A20D35;
+    width: 100%;
+    height: 600px;
+    padding-top: 50px;
+}
+
+.wrapper{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+}
+
+.header-half{
+    width: 50%;
+    height: 100%;
+}
+
+.header-half h1{
+    color: whitesmoke;
+    width: 500px;
+    font-size: 64px;
+    line-height: 75px;
+    padding-top: 40px;
+    margin-bottom: 30px;
+}
+
+.header-half button{
+    color: #BC0D3C;
+    font-size: 16px;
+    font-weight: 500;
+    width: 160px;
+    height: 44px;
+    border-radius: 1px;
+    outline: none;
+    border: 0px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+}
+
+.header-half img{
+    width: 550px;
+    height: auto;
+    position:absolute ;
+}
+
+.img-wrapper{
+    position: relative;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main h2{
+    margin-top: 0 auto;
+}
+.player-items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.players img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.players{
+    padding: 15px;
+    background-color: rgb(201, 69, 69);
+    border: 1px slid #999;
+    width: 28%;
+    height: auto;
+    margin-bottom: 27px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.players h2{
+    margin-top: 0px;
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.players p{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: auto;
 }
