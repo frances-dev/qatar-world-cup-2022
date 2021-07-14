@@ -75,10 +75,13 @@ body{
 }
 
 article{
+    display: flex;
+    justify-content: center;
     background-color: #f8f8f8;
 }
 
 .player-items{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -121,23 +124,135 @@ article{
     height: auto;
 }
 
-/*============== Stadium Section ==============*/
-@media screen and (max-width: 640px){
-  .container{
+/*============= & Media Query ==============*/
+@media screen and (max-width: 375px){
+
+    .wrapper{
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .header-section{
+        background-color: #A20D35;
+        width: 100%;
+        height: 720px;
+        padding-top: 0px;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-half img{
+        width: 300px;
+        height: auto;
+        position:absolute ;
+    }
+
+    .header-half h1{
+        color: whitesmoke;
+        width: 280px;
+        font-size: 50px;
+        padding-top: 10px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .header-half{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 30px;
+    }
+
+    .players{
+        padding: 15px;
+        background-color: white;
+        width: 90%;
+        height: auto;
+        margin-bottom: 27px;
+        box-shadow: 0 0 20px rgb(0 0 0 / 0.15);
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+    }
+
+    .stadium-wrapper{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .stadiums{
+        background-color: #f8f8f8;
+    }
+
+    .content-image{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+      }
+
+    .highlights{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 80px;
+    }
+
+    .highlights h1{
+        line-height: 55px;
+        color: #BC0D3C;
+        margin-top: -20px;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        flex-basis: 100%;
+    }
+
+      .content-image{
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+      }
+
+      .content .content-overlay {
+        width: 100%;
+        background: #bc0d3c8a;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        -webkit-transition: all 0.4s ease-in-out 0s;
+        -moz-transition: all 0.4s ease-in-out 0s;
+        transition: all 0.4s ease-in-out 0s;
+      }
+
+    .container{
     display: block;
     width: 100%;
   }
+  
+
+  .highlight-video{
+    width: 100%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
-@media screen and (min-width: 900px){
-  .container{
-    width: 33.33333%;
-  }
+  /*============ Stadium Section ===============*/
 }
-
-
 .stadium-wrapper{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .stadiums{
@@ -156,14 +271,15 @@ article{
 }
 
 .content {
+    width: 33.33%;
     position: relative;
-    width: 16.67%;
     height: 450px;
     margin: auto;
     overflow: hidden;
   }
   
   .content .content-overlay {
+    width: 100%;
     background: #bc0d3c8a;
     position: absolute;
     left: 0;
@@ -239,8 +355,7 @@ article{
     background-color: #BC0D3C;
 }
 
-.highlights video{
-    background-color: #BC0D3C;
+.highlight-video{
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -248,19 +363,66 @@ article{
     -o-border-radius: 20px;
 }
 
+
 /*============== Footer ==============*/
 .footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    background: url(images/football-field.jpg);
+    position: relative;
     margin-top: 80px;
     width: 100%;
     height: 358px;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
 }
 
-.footer-wrapper img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.footer-logo{
+    width: 127px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 35px;
 }
 
-.footer-image{
-    background-image: solid #A20D35;
+.socials{
+    display: flex;
+}
+
+.fa-instagram{
+    font-family: Font Awesome Free 5;
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fa-dribbble{
+    font-family: Font Awesome Free 5;
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fa-twitter{
+    font-family: Font Awesome Free 5;
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fa-youtube{
+    font-family: Font Awesome Free 5;
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.copyright{
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
 }
