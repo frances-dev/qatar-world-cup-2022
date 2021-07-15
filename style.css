@@ -1,11 +1,10 @@
+/*========= Hero section styling*/
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0px;
     padding:0px;
 }
 
-
-/*========= Hero section styling*/
 .header-section{
     background-color: #A20D35;
     width: 100%;
@@ -234,6 +233,7 @@ article{
         margin-top: -20px;
     }
 
+
     .content {
         display: flex;
         justify-content: center;
@@ -275,7 +275,7 @@ article{
     -o-border-radius: 20px;
 }
 
-/*============ Stadium Section ===============*/
+  /*============ Stadium Section ===============*/
 }
 .stadium-wrapper{
     display: flex;
