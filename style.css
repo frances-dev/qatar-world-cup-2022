@@ -69,6 +69,21 @@ body{
     -o-border-radius: 1px;
 }
 
+.header-half button{
+    color: #BC0D3C;
+    font-size: 16px;
+    font-weight: 600;
+    width: 160px;
+    height: 44px;
+    border-radius: 1px;
+    outline: none;
+    border: 0px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+}
+
 .header-half .fa-arrow-right{
     font-family: Font Awesome Free 5;
     color: #BC0D3C;
@@ -122,6 +137,7 @@ article{
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
 }
+
 .players{
     padding: 15px;
     background-color: white;
@@ -134,6 +150,26 @@ article{
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+}
+
+.players:hover{
+    padding: 15px;
+    background-color: white;
+    width: 29%;
+    height: auto;
+    margin-bottom: 27px;
+    cursor: pointer;
+    box-shadow: 0 0 40px rgb(0 0 0 / 0.35);
+    transition: 300ms;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
 }
 
 .players h2{
