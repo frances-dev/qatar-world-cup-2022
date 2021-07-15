@@ -1,10 +1,11 @@
-/*========= Hero section styling*/
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0px;
     padding:0px;
 }
 
+
+/*========= Hero section styling*/
 .header-section{
     background-color: #A20D35;
     width: 100%;
@@ -150,7 +151,7 @@ article{
     height: auto;
 }
 
-/*============= & Media Query ==============*/
+/*============= & Media Queries ==============*/
 @media screen and (max-width: 375px){
 
     .wrapper{
@@ -274,7 +275,7 @@ article{
     -o-border-radius: 20px;
 }
 
-  /*============ Stadium Section ===============*/
+/*============ Stadium Section ===============*/
 }
 .stadium-wrapper{
     display: flex;
